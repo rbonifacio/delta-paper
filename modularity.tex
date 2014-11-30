@@ -1,0 +1,48 @@
+% spedoc.tex V3.0, 13 May 2010
+
+\documentclass[times]{speauth}
+
+\usepackage{moreverb}
+
+\usepackage[dvips,colorlinks,bookmarksopen,bookmarksnumbered,citecolor=red,urlcolor=red]{hyperref}
+
+\newcommand\BibTeX{{\rmfamily B\kern-.05em \textsc{i\kern-.025em b}\kern-.08em
+T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+
+\def\volumeyear{2014}
+
+\begin{document}
+
+\title{Understanding the Modular Operators of \\ Delta-Oriented Programming}
+
+\author{Fausto Carvalho\affil{1},  Marcos Oliveira\affil{1}, Pedro Costa\affil{1}, Alexandre Lucchesi\affil{1}, Rodrigo Bonif\'{a}cio\affil{1}, Hilmer Neri\affil{2}, Daniel Sandoval\affil{1}}
+
+\address{\affilnum{1}Computar Science Department, University of Bras\'{i}lia,
+  Bras\'{i}lia, Brazil \break
+  \affilnum{2}Faculty of Engineering of Gama, University of Bras\'{i}lia,
+  Bras\'{i}lia, Brazil}
+
+\corraddr{Campus Universit\'{a}rio Darcy Ribeiro -- Asa Norte
+Edif\'{i}cio CIC/EST 70910-900 Brasília -- DF -- Brasil. Email: rbonifacio@cic.unb.br}
+
+\input{abstract}
+
+\maketitle
+
+\input{introduction}
+\input{delta}
+\input{settings}
+\input{results}
+\input{threats}
+\input{related}
+\input{final-remarks}
+
+
+\ack This class file was developed by Sunrise Setting Ltd,
+Torquay, Devon, UK. Website:\\
+\href{http://www.sunrise-setting.co.uk}{\texttt{www.sunrise-setting.co.uk}}
+
+\bibliographystyle{wileyj}
+\bibliography{modularity.bib}
+
+\end{document}

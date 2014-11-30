@@ -1,0 +1,58 @@
+\vspace{-6pt}
+
+\section{Introduction}
+
+There is a growing interest in the research and 
+development of variant intensive software systems (such as
+software product lines~\cite{}), leading to the design of several techniques for
+modeling, modularising, implementing,
+and reasoning about software variability. That is the case of
+Delta-Oriented programming,  a prominent technique for implementing
+variant systems that has evolved from an experimental,
+prototypical based approach~\cite{schaeger-splc2010}
+for dealing with software variability composition 
+to a full fledged Java implementation~\cite{koscielny-ppj14}.
+
+In the context of variant intensive software systems,
+modularity is recognized as a fundamental property, and the
+relation between modularity and variant systems (in general)
+is clearly discussed within the Baldwin and Clark theory~\cite{dr-book}, which states that ``\emph{a modular 
+design is a fundamental property that allows a designer to experiment 
+with different alternatives}''.  Therefore, based on a modular design supported
+by established design rules, developers should be able to evolve a
+software product line (SPL) according to software engineering
+design principles (e.g., the open-closed and principles). Nevertheless, Neves et al. describe that
+evolving software product lines is a challenging and error prone task (even for
+small product lines)~\cite{neves-gpce2011}, because it requires deeper impact analysis and
+the involvement of both domain and product engineers to reason about
+the consistence among SPL assets that represent and relate the
+variability space (usually described using feature models) to the solution space (i.e.,
+detailed requirements and design, source code, test cases, test scripts, and so on).
+
+It is usually assumed that Delta-Oriented programming improves the modular decomposition 
+of features. For instance, Schaefer et al. compared Delta-Oriented programming with Feature-Oriented
+programming~\cite{batory-icse2003}, concluding that the first simplifies the evolution of
+SPLs. In addition, a recent study compared two implementations of a
+text editor product line: one implementation developed using DeltaJ 1.5 (a Java 5 implementation
+of Delta-Oriented programming) and another implementation developed
+using a plugin based architecture on top of the Eclipse Rich Client Platform. The authors
+conclude that Delta-Oriented programming is more intuitive and simplifies both
+product line implementation and configurability, by reducing the necessary code base.   
+However, the involved trade-offs of using Delta-Oriented programming are not full understood.
+In particular because (a) the first study is based on qualitative assessments and  lacks the use of a
+rigorous approach to support its claims, and (b) the second study focuses on building a product line
+from scratch and investigates redundancy and program comprehension.
+Although these perspectives relate to modularity,  they do not investigate other
+characteristics of a modular design--- which should support independent development
+and flexibility to evolve. 
+
+In this paper we first investigate the use of Delta-Programming to extract a
+SPL from an existing project. This is a typical approach for
+software product line engineering that reduces the risks of
+product line adoption. We then investigate how Delta-Oriented
+programming accommodate the evolution of a software
+product line with respect to typical evolutionary scenarios
+of a product line~\cite{neves-gpce2011}. Therefore, the contributions
+of this paper are three fold {\ldots}
+
+\vspace{-6pt}
