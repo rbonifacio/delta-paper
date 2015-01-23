@@ -4,5 +4,13 @@
 *.bak
 *.blg
 *.out
+<<<<<<< HEAD
 *.pdf
 *.synctex.gz
+=======
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+.DS_Store
+modularity.pdf
+>>>>>>> FETCH_HEAD
